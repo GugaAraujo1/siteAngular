@@ -7,13 +7,15 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { ItemOutputComponent } from './item-output/item-output.component';
 import { ItemDropdownComponent } from './item-dropdown/item-dropdown.component';
 import { FormsModule } from '@angular/forms';
+import { PedidosGalurguerComponent } from './pedidos-galurguer/pedidos-galurguer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemDetailComponent,
     ItemOutputComponent,
-    ItemDropdownComponent
+    ItemDropdownComponent,
+    PedidosGalurguerComponent,
   ],
   imports: [
     BrowserModule, FormsModule,
