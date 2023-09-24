@@ -1,11 +1,12 @@
-<h1>Galurguer - Faça seu pedido</h1>
+<h1>Faça seu pedido!</h1>
 
-<label>Digite o nome do hambúrguer: <input #newBurgerName /></label>
+<label>Digite o nome do hambúrguer: <input [(ngModel)]="valorInput" /></label>
 <br />
-<button (click)="addNewBurger(newBurgerName.value)">Adicionar hambúrguer</button>
-
-<button (click)="clearInput()">Limpar</button>
+<button (click)="adicionarPedido()">Adicionar aos pedidos!</button>
+<button (click)="limparInput()">Limpar</button>
 
 <ul>
   <li *ngFor="let burger of burgers">{{ burger }}</li>
 </ul>
+
+<button (click)="removeItens()">Excluir Pedidos</button>

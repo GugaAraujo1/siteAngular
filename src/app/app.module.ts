@@ -8,6 +8,7 @@ import { ItemOutputComponent } from './item-output/item-output.component';
 import { ItemDropdownComponent } from './item-dropdown/item-dropdown.component';
 import { FormsModule } from '@angular/forms';
 import { PedidosGalurguerComponent } from './pedidos-galurguer/pedidos-galurguer.component';
+import { EdicaoComponent } from './edicao/edicao.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PedidosGalurguerComponent } from './pedidos-galurguer/pedidos-galurguer
     ItemOutputComponent,
     ItemDropdownComponent,
     PedidosGalurguerComponent,
+    EdicaoComponent,
   ],
   imports: [
     BrowserModule, FormsModule,

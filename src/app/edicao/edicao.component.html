@@ -1,0 +1,16 @@
+<h2>Edição de Lanche</h2>
+<select [(ngModel)]="selectedBurger">
+  <option *ngFor="let burger of burgers" [ngValue]="burger">{{ burger.name }} - R$ {{ burger.price.toFixed(2) }}</option>
+</select>
+
+<h3>Opções de Personalização</h3>
+<select [(ngModel)]="selectedCustomization">
+  <option *ngFor="let customization of selectedBurger?.customizations" [ngValue]="customization">{{ customization }}</option>
+</select>
+
+<button (click)="customizeBurger()">Adicionar Personalização</button>
+
+<h3>Resumo do Pedido</h3>
+<ul>
+  <li *ngFor="let change of customizationList">{{ change }}</li>
+</ul>

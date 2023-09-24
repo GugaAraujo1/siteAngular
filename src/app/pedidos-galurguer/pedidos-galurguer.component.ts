@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'pedidos-galurguer',
+  selector: 'app-pedidos-galuguer',
   templateUrl: './pedidos-galurguer.component.html',
   styleUrls: ['./pedidos-galurguer.component.css']
 })
@@ -16,16 +16,25 @@ export class PedidosGalurguerComponent {
     'Galúrguer Especial do Chef'
   ];
 
-  newBurgerName: string = ''; // Adicione esta linha para declarar a variável newBurgerName
+  valorInput = '';
 
-  addNewBurger(burgerName: string) {
-    if (burgerName.trim() !== '') {
-      this.burgers.push(burgerName);
-      this.newBurgerName = ''; // Limpar o campo após adicionar o hambúrguer
+  adicionarPedido() {
+    if (this.valorInput === '') alert('valor inválido');
+    else{
+      this.burgers.push(this.valorInput);
+      this.valorInput = ''; // Limpa o campo após adicionar o hambúrguer
     }
   }
 
-  clearInput() {
-    this.newBurgerName = ''; // Limpar o campo
+  limparInput() {
+    this.valorInput = ''; // Limpa o campo
+  }
+
+  removeItens() {
+    while (this.burgers.length > 0) {
+      this.burgers.pop(); //remove ultimo elemento
+    }
   }
 }
+
+
