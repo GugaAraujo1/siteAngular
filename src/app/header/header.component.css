@@ -1,20 +1,43 @@
-.header {
+/* Estilo para o cabeçalho */
+header {
     background-color: #FF3131;
     width: 100%;
-    position: absolute;
-    left: 0;
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
     display: flex;
     align-items: center;
-}
-
-h1{
-    color: black;
-    text-align: center;
-}
-
-a{
-    color: black;
-    margin-left: 2rem;
-}
-
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  /* Estilo para o logotipo */
+  img {
+    max-width: 10%;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  
+  /* Estilo para os links de navegação */
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Ajuste de margem para o segundo link */
+  a:nth-child(2) {
+    margin-left: 10px; /* Reduz a margem para o segundo link */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

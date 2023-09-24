@@ -1,32 +1,62 @@
-li{
-    margin-left: 26rem;
-    text-align: start;
-}
-
-button{
+/* Estilo para o container do formulário */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para o rótulo e entrada de texto do formulário */
+  label.fazerPedido {
+    flex: 1;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  input.fazerPedido {
+    flex: 2;
+    height: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+  
+  /* Estilo para o botão de adicionar */
+  button.botaoAdicionar {
     background-color: #FF3131;
+    color: white;
+    border: none;
     border-radius: 1rem;
-}
-
-.fazerPedido{
-    margin-left: 0.5rem;
-    height: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o container do botão Limpar */
+  .button-container {
+    display: flex;
+    justify-content: flex-end; /* Alinhar o botão à direita */
+    margin-top: 10px;
+  }
+  
+  /* Estilo para o botão de limpar */
+  button.botaoLimpar {
+    background-color: #FF3131;
+    color: white;
+    border: none;
     border-radius: 1rem;
-}
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-right: 10rem;
+  }
 
-.botaoAdicionar{
-    margin-left: 0.5rem;
-    width: 10rem;
-    height: 2rem;
-}
-
-.botaoLimpar{
-    margin-top: 0.2rem;
-    margin-left: 12rem;
-}
-
-.botaoRemover{
-    width: 10rem;
-    height: 2rem;
-}
-    
+  /* Estilo para o botão de remover pedidos */
+button.botaoRemover {
+    margin-top: 10px; /* Espaçamento superior */
+    background-color: #FF3131;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
