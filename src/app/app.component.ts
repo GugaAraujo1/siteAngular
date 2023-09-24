@@ -6,7 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projetoDropDownTA';
-  currentItem = 'Lasanha de queijo';
-  currentnum = 15.99;
+  title = 'Galúrguer';
+  currentItem = 'Galúrguer Supremo';
+  currentnum = 7.99;
+  fotoSupremo = "https://img.cybercook.com.br/receitas/731/lasanha-3.jpeg"
+
+  itensCatalogo = [
+    { name: 'Galúrguer Supremo', price: 10.99 },
+    { name: 'Galúrguer de Frango', price: 8.99 },
+    { name: 'Galúrguer Vegetariano', price: 8.99 },
+    { name: 'Galúrguer Picante', price: 8.99 },
+    { name: 'Galúrguer Duplo com Queijo', price: 8.99 },
+    { name: 'Galúrguer Especial do Chef', price: 8.99 },
+    // Adicione mais itens do catálogo aqui
+  ];
 }

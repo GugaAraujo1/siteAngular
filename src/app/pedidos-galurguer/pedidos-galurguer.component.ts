@@ -7,14 +7,7 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class PedidosGalurguerComponent {
 
-  burgers: string[] = [
-    'Galúrguer Supremo',
-    'Galúrguer de Frango',
-    'Galúrguer Vegetariano',
-    'Galúrguer Picante',
-    'Galúrguer Duplo com Queijo',
-    'Galúrguer Especial do Chef'
-  ];
+  burgers: string[] = [];
 
   valorInput = '';
 

@@ -1,13 +1,18 @@
 <h1>Entradas e saídas e DropDown</h1>
 <!-- a tag app-item-detail é definida na classe .ts campo selector-->
-<app-item-detail [item]="currentItem" [num]="currentnum"></app-item-detail>
+<app-item-detail 
+[item]="currentItem" 
+[num]="currentnum"
+[foto]="fotoSupremo"
+></app-item-detail>
 <hr />
+<app-catalogo [items]="itensCatalogo"></app-catalogo>
 <!-- <app-item-output></app-item-output> -->
 
 <app-pedidos-galuguer></app-pedidos-galuguer>
 <hr />
 <br>
-<app-item-dropdown></app-item-dropdown>
+<!-- <app-item-dropdown></app-item-dropdown> -->
 
-<edicao></edicao>
+<app-edicao></app-edicao>
 

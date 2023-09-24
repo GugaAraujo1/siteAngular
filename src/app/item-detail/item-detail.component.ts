@@ -8,5 +8,7 @@ import { Component, Input } from '@angular/core';
 export class ItemDetailComponent {
   @Input() item: string = ''; // decorate the property with @Input()
   @Input() num: number = 0;
+  @Input() foto: string;
+
 
 }

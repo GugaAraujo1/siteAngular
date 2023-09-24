@@ -9,6 +9,7 @@ import { ItemDropdownComponent } from './item-dropdown/item-dropdown.component';
 import { FormsModule } from '@angular/forms';
 import { PedidosGalurguerComponent } from './pedidos-galurguer/pedidos-galurguer.component';
 import { EdicaoComponent } from './edicao/edicao.component';
+import { CatalogoComponent } from './catalogo/catalogo.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { EdicaoComponent } from './edicao/edicao.component';
     ItemDropdownComponent,
     PedidosGalurguerComponent,
     EdicaoComponent,
+    CatalogoComponent,
   ],
   imports: [
     BrowserModule, FormsModule,

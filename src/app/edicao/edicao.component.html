@@ -1,16 +1,17 @@
-<h2>Edição de Lanche</h2>
-<select [(ngModel)]="selectedBurger">
+<h1>Edite os Lanches com a sua Preferência!</h1>
+<select [(ngModel)]="selectedBurger" (change)="updateCustomizationOptions()">
   <option *ngFor="let burger of burgers" [ngValue]="burger">{{ burger.name }} - R$ {{ burger.price.toFixed(2) }}</option>
 </select>
 
-<h3>Opções de Personalização</h3>
-<select [(ngModel)]="selectedCustomization">
-  <option *ngFor="let customization of selectedBurger?.customizations" [ngValue]="customization">{{ customization }}</option>
+<h3 *ngIf="selectedBurger">Opções de Personalização</h3>
+<select [(ngModel)]="selectedCustomization" *ngIf="selectedBurger">
+  <option *ngFor="let customization of availableCustomizations" [ngValue]="customization">{{ customization }}</option>
 </select>
 
-<button (click)="customizeBurger()">Adicionar Personalização</button>
+<button (click)="customizeBurger()" *ngIf="selectedCustomization !== 'Selecione'">Adicionar Personalização</button>
 
-<h3>Resumo do Pedido</h3>
-<ul>
+<!-- Mostra o resumo somente quando showCustomizationSummary for verdadeiro -->
+<h3 *ngIf="mostrarEdicoes">Personalizações no Pedido</h3>
+<ul *ngIf="mostrarEdicoes">
   <li *ngFor="let change of customizationList">{{ change }}</li>
 </ul>
