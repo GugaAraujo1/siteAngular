@@ -1,12 +1,14 @@
 <h1>Faça seu pedido!</h1>
 
-<label>Digite o nome do hambúrguer: <input [(ngModel)]="valorInput" /></label>
-<br />
-<button (click)="adicionarPedido()">Adicionar aos pedidos!</button>
-<button (click)="limparInput()">Limpar</button>
+<div>
+  <label class="fazerPedido">Digite o nome do hambúrguer: <input class="fazerPedido" [(ngModel)]="valorInput" /></label>
+  <button class="botaoAdicionar" (click)="adicionarPedido()">Adicionar aos pedidos!</button>
+</div>
+
+<button class="botaoLimpar" (click)="limparInput()">Limpar</button>
 
 <ul>
   <li *ngFor="let burger of burgers">{{ burger }}</li>
 </ul>
 
-<button (click)="removeItens()">Excluir Pedidos</button>
+<button class="botaoRemover" (click)="removeItens()">Excluir Pedidos</button>

@@ -1,0 +1,32 @@
+li{
+    margin-left: 26rem;
+    text-align: start;
+}
+
+button{
+    background-color: #FF3131;
+    border-radius: 1rem;
+}
+
+.fazerPedido{
+    margin-left: 0.5rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.botaoAdicionar{
+    margin-left: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+}
+
+.botaoLimpar{
+    margin-top: 0.2rem;
+    margin-left: 12rem;
+}
+
+.botaoRemover{
+    width: 10rem;
+    height: 2rem;
+}
+    

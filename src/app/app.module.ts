@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { PedidosGalurguerComponent } from './pedidos-galurguer/pedidos-galurguer.component';
 import { EdicaoComponent } from './edicao/edicao.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
     PedidosGalurguerComponent,
     EdicaoComponent,
     CatalogoComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule, FormsModule,
