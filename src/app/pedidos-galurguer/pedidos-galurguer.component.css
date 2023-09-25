@@ -6,19 +6,11 @@
     margin-top: 20px;
   }
   
-  /* Estilo para o rótulo e entrada de texto do formulário */
-  label.fazerPedido {
-    flex: 1;
-    margin-right: 10px;
-    color: #333;
-  }
-  
   input.fazerPedido {
     flex: 2;
-    height: 2rem;
     border: 1px solid #ddd;
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
   }
   
   /* Estilo para o botão de adicionar */
@@ -29,6 +21,7 @@
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    height: 2rem;
   }
   
   /* Estilo para o container do botão Limpar */
@@ -60,3 +53,8 @@ button.botaoRemover {
     cursor: pointer;
   }
   
+  li{
+    text-align: start;
+    font-family: 'C:\Users\felip\OneDrive\Documentos\GitHub\siteAngular\Fontes\static\Montserrat-Bold';
+
+  }

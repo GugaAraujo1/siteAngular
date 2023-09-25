@@ -1,7 +1,5 @@
 li{
     background-color: #FF3131;
     border-style: solid;
-    display: table-cell;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin: 2rem;
 }

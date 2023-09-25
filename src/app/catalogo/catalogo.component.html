@@ -3,6 +3,7 @@
 <ul>
   <li *ngFor="let item of items">
     <h2>{{ item.name }}</h2>
+    <img src="{{ item.imagem }}" alt="{{ item.name }}" width="40%">
     <p>R$ {{ item.price.toFixed(2) }}</p>
   </li>
 </ul>

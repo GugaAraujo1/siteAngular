@@ -12,7 +12,6 @@ header {
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px 20px;
   }
   
@@ -20,9 +19,8 @@ header {
   img {
     max-width: 10%;
     height: auto;
-    margin-right: 10px;
+    margin-left: 10rem;
   }
-  
   
   /* Estilo para os links de navegação */
   a {
@@ -30,11 +28,12 @@ header {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
+    margin-left: 50rem;
   }
   
   /* Ajuste de margem para o segundo link */
   a:nth-child(2) {
-    margin-left: 10px; /* Reduz a margem para o segundo link */
+    margin-left: 10rem; /* Reduz a margem para o segundo link */
   }
   
   a:hover {
